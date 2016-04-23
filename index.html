@@ -40,6 +40,8 @@
 </script>
 <!-- Universal Google Analytics Plugin by PB Web Development -->
 
+<!-- Adding in a recaptcha to reduce spam emails to club -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -173,11 +175,16 @@
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     
-                    <p class="lead">Exhibition 1 March - 2 April 2016</p>
+                    <p class="lead">Exhibition 6 April - 30 April 2016</p>
+					
+					<p><img class="img-responsive" src="http://www.scottishartsclub.co.uk/images/gallery/SSAA-SACFlier_small.jpg" alt="Exhibition by SSAA (Scottish Society of Architect Artists)"><em>Exhibition by SSAA (Scottish Society of Architect Artists), Craft (Glass Jewellery) by Susan Falconer.</em>
+                        </p>
+                        <p>&nbsp;</p><p class="lead">Exhibition 1 March - 2 April 2016</p>
 					
 					<p><img class="img-responsive" src="http://www.scottishartsclub.co.uk/images/gallery/CDavisonfin.jpg" alt="Exhibition by RSA Open Award 2013 Winner, Catharine Davison RSW"><em>Exhibition by RSA Open Award 2013 Winner, Catharine Davison RSW, Craft (Stone Carving) by Natasha Smith, with Sarah Wass exhibiting in the Geddes Gallery.</em>
                         </p>
-                        <p>&nbsp;</p><p class="lead">Exhibition 3 February - 27 February 2016</p>
+                        <p>&nbsp;</p>
+                        <p class="lead">Exhibition 3 February - 27 February 2016</p>
 					
 					<p><img class="img-responsive" src="http://www.scottishartsclub.co.uk/images/gallery/FebFlierFin.jpg" alt="Exhibition of Prints by Michael Kirkman, Kittie Jones and Laura Gressani"><em>Exhibition of Prints by Michael Kirkman, Kittie Jones and Laura Gressani, Craft (Ceramic Jewellery) by Beth Lamont, with Colin Sutherland exhibiting in the Geddes Gallery.</em>
                         </p>
@@ -354,7 +361,7 @@ The RSW, SSA, VAS awards are chosen by representatives of the Scottish Arts Club
                 <div class="col-md-4">
                     <hr class="section-heading-spacer"></hr>
 <div class="clearfix"></div>
-                    <form class="form-horizontal" role="form" method="post" action="http://formspree.io/office@scottishartsclub.co.uk">
+                    <form class="form-horizontal" role="form" method="post" action="contact.php">
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
@@ -374,10 +381,8 @@ The RSW, SSA, VAS awards are chosen by representatives of the Scottish Arts Club
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                                    </div>
+                        <label class="col-sm-2">Human</label>
+                        <div class="col-sm-10 g-recaptcha" data-sitekey="6LcYJh4TAAAAAEWuDYW35fQoYjOMhyuUiG7G0jKd"></div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10 col-sm-offset-2">
@@ -389,6 +394,7 @@ The RSW, SSA, VAS awards are chosen by representatives of the Scottish Arts Club
                                 <! Will be used to display an alert to the user>
                             </div>
                         </div>
+                        
                     </form>
                     </div>
                 <div class="col-md-4">
